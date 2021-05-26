@@ -1,6 +1,7 @@
 import { Document, Font, Page, Text, View } from '@react-pdf/renderer';
-import { styles } from '../styles/OneWeekReportStyle';
 import PersonalInfo from './PersonalInfo';
+import WorkingInfo from './WorkingInfo';
+import { styles } from '../styles/OneWeekReportStyle';
 
 Font.register({
   family: 'Nanum Gothic',
@@ -28,6 +29,7 @@ function Index() {
           <Text>재택근무 중 업무수행 내역서</Text>
         </View>
         <PersonalInfo />
+        <WorkingInfo />
       </Page>
     </Document>
   );

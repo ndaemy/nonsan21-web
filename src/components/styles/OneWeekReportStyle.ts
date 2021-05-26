@@ -19,6 +19,13 @@ export const styles = StyleSheet.create({
     borderTop: '0.2mm solid black',
     borderBottom: '0.2mm solid black',
   },
+  work: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    margin: '2mm 25mm 0 25mm',
+    borderTop: '0.2mm solid black',
+    borderBottom: '0.2mm solid black',
+  },
   infoTitle: {
     padding: '1mm 2mm',
   },
