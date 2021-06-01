@@ -12,14 +12,21 @@ export const styles = StyleSheet.create({
     fontWeight: 700,
     fontSize: 18,
   },
-  info: {
+  personalInfo: {
     flexDirection: 'row',
     alignItems: 'center',
     margin: '8mm 25mm 0 25mm',
     borderTop: '0.2mm solid black',
     borderBottom: '0.2mm solid black',
   },
-  work: {
+  workingInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    margin: '2mm 25mm 0 25mm',
+    borderTop: '0.2mm solid black',
+    borderBottom: '0.2mm solid black',
+  },
+  workingLog: {
     flexDirection: 'row',
     alignItems: 'center',
     margin: '2mm 25mm 0 25mm',
@@ -28,15 +35,22 @@ export const styles = StyleSheet.create({
   },
   infoTitle: {
     padding: '1mm 2mm',
+    width: '22mm',
+    textAlign: 'center',
   },
   flexRow: {
+    display: 'flex',
     flexDirection: 'row',
   },
   flexColumn: {
+    display: 'flex',
     flexDirection: 'column',
   },
   flexGrow1: {
     flexGrow: 1,
+  },
+  alignItemsCenter: {
+    alignItems: 'center',
   },
   textRight: {
     textAlign: 'right',
@@ -45,7 +59,7 @@ export const styles = StyleSheet.create({
     padding: '1mm 2mm',
   },
   paddingLeftTap: {
-    paddingLeft: '8mm',
+    paddingLeft: '6mm',
   },
   borderBottom1: {
     borderBottom: '0.1mm solid black',

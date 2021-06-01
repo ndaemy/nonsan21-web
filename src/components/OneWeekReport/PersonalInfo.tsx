@@ -3,7 +3,7 @@ import { styles } from '../styles/OneWeekReportStyle';
 
 function PersonalInfo() {
   return (
-    <View style={styles.info}>
+    <View style={styles.personalInfo}>
       <View style={styles.infoTitle}>
         <Text>인적사항 등</Text>
       </View>

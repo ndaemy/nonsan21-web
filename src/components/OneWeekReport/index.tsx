@@ -2,6 +2,7 @@ import { Document, Font, Page, Text, View } from '@react-pdf/renderer';
 import PersonalInfo from './PersonalInfo';
 import WorkingInfo from './WorkingInfo';
 import { styles } from '../styles/OneWeekReportStyle';
+import WorkingLog from './WorkingLog';
 
 Font.register({
   family: 'Nanum Gothic',
@@ -30,6 +31,7 @@ function Index() {
         </View>
         <PersonalInfo />
         <WorkingInfo />
+        <WorkingLog />
       </Page>
     </Document>
   );

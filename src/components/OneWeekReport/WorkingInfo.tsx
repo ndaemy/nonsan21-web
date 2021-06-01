@@ -3,7 +3,7 @@ import { styles } from '../styles/OneWeekReportStyle';
 
 function WorkingInfo() {
   return (
-    <View style={styles.work}>
+    <View style={styles.workingInfo}>
       <View style={styles.infoTitle}>
         <Text>재택근무 등</Text>
       </View>
