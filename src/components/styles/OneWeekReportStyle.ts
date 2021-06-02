@@ -27,14 +27,21 @@ export const styles = StyleSheet.create({
     borderBottom: '0.2mm solid black',
   },
   workingLog: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: 'column',
+    justifyContent: 'center',
     margin: '2mm 25mm 0 25mm',
     borderTop: '0.2mm solid black',
     borderBottom: '0.2mm solid black',
   },
   infoTitle: {
     padding: '1mm 2mm',
+    width: '22mm',
+    textAlign: 'center',
+  },
+  halfColumn: {
+    width: '69mm',
+  },
+  dates: {
     width: '22mm',
     textAlign: 'center',
   },
@@ -60,6 +67,9 @@ export const styles = StyleSheet.create({
   },
   paddingLeftTap: {
     paddingLeft: '6mm',
+  },
+  borderTop1: {
+    borderTop: '0.1mm solid black',
   },
   borderBottom1: {
     borderBottom: '0.1mm solid black',
