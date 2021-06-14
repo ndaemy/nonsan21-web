@@ -1,8 +1,11 @@
-import { Document, Font, Page, Text, View } from '@react-pdf/renderer';
-import PersonalInfo from './PersonalInfo';
-import WorkingInfo from './WorkingInfo';
-import { styles } from '../styles/OneWeekReportStyle';
-import WorkingLog from './WorkingLog';
+import {
+  Document,
+  Font,
+  Page,
+  StyleSheet,
+  Text,
+  View,
+} from '@react-pdf/renderer';
 
 Font.register({
   family: 'Nanum Gothic',
@@ -15,23 +18,34 @@ Font.register({
       src: '/fonts/NanumGothic-Bold.ttf',
       fontWeight: 700,
     },
-    {
-      src: '/fonts/NanumGothic-ExtraBold.ttf',
-      fontWeight: 800,
-    },
   ],
+});
+
+const styles = StyleSheet.create({
+  page: {
+    flexDirection: 'column',
+    fontFamily: 'Nanum Gothic',
+    backgroundColor: 'white',
+  },
+  container: {
+    margin: '64px 42px',
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: 700,
+    textAlign: 'center',
+  },
 });
 
 function Index() {
   return (
     <Document>
       <Page size='A4' style={styles.page}>
-        <View style={styles.title}>
-          <Text>재택근무 중 업무수행 내역서</Text>
+        <View style={styles.container}>
+          <View style={styles.title}>
+            <Text>재택근무 중 업무수행 내역서</Text>
+          </View>
         </View>
-        <PersonalInfo />
-        <WorkingInfo />
-        <WorkingLog />
       </Page>
     </Document>
   );
