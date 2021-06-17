@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     width: 100,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRight: 1,
+    borderRight: 0.5,
   },
   infoTableContent: {
     flexDirection: 'column',
@@ -58,8 +58,8 @@ const styles = StyleSheet.create({
   infoTableRow: {
     height: 40,
   },
-  borderBottom1: {
-    borderBottom: 1,
+  borderBottomHalf: {
+    borderBottom: 0.5,
   },
 });
 
@@ -76,7 +76,7 @@ function Index() {
               <Text>인적사항 등</Text>
             </View>
             <View style={styles.infoTableContent}>
-              <View style={[styles.infoTableRow, styles.borderBottom1]}>
+              <View style={[styles.infoTableRow, styles.borderBottomHalf]}>
                 <Text>테스트</Text>
               </View>
               <View style={styles.infoTableRow}>
