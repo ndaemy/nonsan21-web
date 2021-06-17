@@ -56,10 +56,21 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   infoTableRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    lineHeight: 1.4,
     height: 40,
+  },
+  infoTableRowItem: {
+    flexGrow: 1,
+    padding: '5px 8px',
+    height: '100%',
   },
   borderBottomHalf: {
     borderBottom: 0.5,
+  },
+  borderLeftHalf: {
+    borderLeft: 0.5,
   },
 });
 
@@ -77,10 +88,24 @@ function Index() {
             </View>
             <View style={styles.infoTableContent}>
               <View style={[styles.infoTableRow, styles.borderBottomHalf]}>
-                <Text>테스트</Text>
+                <View style={styles.infoTableRowItem}>
+                  <Text>성명</Text>
+                  <Text>홍길동</Text>
+                </View>
+                <View style={[styles.infoTableRowItem, styles.borderLeftHalf]}>
+                  <Text>생년월일</Text>
+                  <Text>20. 10. 21.</Text>
+                </View>
+                <View style={[styles.infoTableRowItem, styles.borderLeftHalf]}>
+                  <Text>편입일</Text>
+                  <Text>20. 10. 21.</Text>
+                </View>
               </View>
               <View style={styles.infoTableRow}>
-                <Text>테스트</Text>
+                <View style={styles.infoTableRowItem}>
+                  <Text>소속</Text>
+                  <Text>주식회사 왓챠</Text>
+                </View>
               </View>
             </View>
           </View>
