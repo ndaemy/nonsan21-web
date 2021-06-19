@@ -92,6 +92,35 @@ function Index() {
             <View style={styles.infoTableContent}>
               <View style={[styles.infoTableRow, styles.borderBottomHalf]}>
                 <View style={styles.infoTableRowItem}>
+                  <Text>사유</Text>
+                  <Text style={styles.tab}>코로나19로 인한 전사 재택근무</Text>
+                </View>
+                <View style={[styles.infoTableRowItem, styles.borderLeftHalf]}>
+                  <Text>연락처</Text>
+                  <Text style={styles.tab}>010-1234-5678</Text>
+                </View>
+                <View style={[styles.infoTableRowItem, styles.borderLeftHalf]}>
+                  <Text>재택기간</Text>
+                  <Text style={styles.tab}>20. 10. 21. ~ 20. 10. 28.</Text>
+                </View>
+              </View>
+              <View style={styles.infoTableRow}>
+                <View style={styles.infoTableRowItem}>
+                  <Text>근무지 주소</Text>
+                  <Text style={styles.tab}>
+                    서울특별시 서초구 강남대로 343 3층 왓챠
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={styles.infoTable}>
+            <View style={styles.infoTableTitle}>
+              <Text>재택근무 등</Text>
+            </View>
+            <View style={styles.infoTableContent}>
+              <View style={[styles.infoTableRow, styles.borderBottomHalf]}>
+                <View style={styles.infoTableRowItem}>
                   <Text>성명</Text>
                   <Text style={styles.tab}>홍길동</Text>
                 </View>
