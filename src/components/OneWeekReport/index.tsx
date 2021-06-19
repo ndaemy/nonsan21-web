@@ -72,6 +72,9 @@ const styles = StyleSheet.create({
   borderLeftHalf: {
     borderLeft: 0.5,
   },
+  tab: {
+    marginLeft: 4,
+  },
 });
 
 function Index() {
@@ -90,21 +93,21 @@ function Index() {
               <View style={[styles.infoTableRow, styles.borderBottomHalf]}>
                 <View style={styles.infoTableRowItem}>
                   <Text>성명</Text>
-                  <Text>홍길동</Text>
+                  <Text style={styles.tab}>홍길동</Text>
                 </View>
                 <View style={[styles.infoTableRowItem, styles.borderLeftHalf]}>
                   <Text>생년월일</Text>
-                  <Text>20. 10. 21.</Text>
+                  <Text style={styles.tab}>20. 10. 21.</Text>
                 </View>
                 <View style={[styles.infoTableRowItem, styles.borderLeftHalf]}>
                   <Text>편입일</Text>
-                  <Text>20. 10. 21.</Text>
+                  <Text style={styles.tab}>20. 10. 21.</Text>
                 </View>
               </View>
               <View style={styles.infoTableRow}>
                 <View style={styles.infoTableRowItem}>
                   <Text>소속</Text>
-                  <Text>주식회사 왓챠</Text>
+                  <Text style={styles.tab}>주식회사 왓챠</Text>
                 </View>
               </View>
             </View>
