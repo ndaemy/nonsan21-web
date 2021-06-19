@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     height: 80,
     borderTop: 1,
     borderBottom: 1,
-    margin: '10px 0',
+    marginTop: 12,
   },
   infoTableTitle: {
     width: 100,
@@ -66,6 +66,26 @@ const styles = StyleSheet.create({
     padding: '5px 8px',
     height: '100%',
   },
+  logTable: {
+    flexDirection: 'row',
+    width: '100%',
+    borderTop: 1,
+    borderBottom: 1,
+    marginTop: 12,
+  },
+  logTableFirstColumn: {
+    flexGrow: 3,
+  },
+  logTableSecondColumn: {
+    flexGrow: 5,
+  },
+  logTableThirdColumn: {
+    flexGrow: 7,
+  },
+  paddingY8: {
+    paddingTop: 8,
+    paddingBottom: 8,
+  },
   borderBottomHalf: {
     borderBottom: 0.5,
   },
@@ -74,6 +94,10 @@ const styles = StyleSheet.create({
   },
   tab: {
     marginLeft: 4,
+  },
+  marginXAuto: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
 });
 
@@ -138,6 +162,23 @@ function Index() {
                     서울특별시 서초구 강남대로 343 3층 왓챠
                   </Text>
                 </View>
+              </View>
+            </View>
+          </View>
+          <View style={styles.logTable}>
+            <View style={styles.logTableFirstColumn}>
+              <View style={styles.paddingY8}>
+                <Text style={styles.marginXAuto}>일자</Text>
+              </View>
+            </View>
+            <View style={styles.logTableSecondColumn}>
+              <View style={styles.paddingY8}>
+                <Text style={styles.marginXAuto}>근무 상황</Text>
+              </View>
+            </View>
+            <View style={styles.logTableThirdColumn}>
+              <View style={styles.paddingY8}>
+                <Text style={styles.marginXAuto}>수행업무 내용</Text>
               </View>
             </View>
           </View>
