@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   container: {
-    margin: '64px 42px',
+    margin: '54px 42px 0',
   },
   title: {
     fontSize: 18,
@@ -107,6 +107,33 @@ const styles = StyleSheet.create({
   marginXAuto: {
     marginLeft: 'auto',
     marginRight: 'auto',
+  },
+  footer: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    lineHeight: 1.6,
+    marginTop: 12,
+    width: '100%',
+  },
+  comment: {
+    width: '100%',
+  },
+  signBlock: {
+    marginTop: 12,
+    lineHeight: 2.8,
+    width: 180,
+  },
+  signRow: {
+    flexDirection: 'row',
+  },
+  alignCenter: {
+    alignSelf: 'center',
+  },
+  alignRight: {
+    alignSelf: 'flex-end',
+  },
+  marginLeftAuto: {
+    marginLeft: 'auto',
   },
 });
 
@@ -298,6 +325,26 @@ function Index() {
               </View>
               <View style={styles.logTableDayRow}>
                 <Text style={styles.marginXAuto}>이것 저것</Text>
+              </View>
+            </View>
+          </View>
+          <View style={styles.footer}>
+            <View style={styles.comment}>
+              <Text style={styles.alignCenter}>
+                위와 같이 재택근무기간 중 근무하였음을 확인합니다.
+              </Text>
+              <Text style={styles.alignRight}>2021년 1월 12일</Text>
+            </View>
+            <View style={styles.signBlock}>
+              <View style={styles.signRow}>
+                <Text>작성자</Text>
+                <Text style={styles.marginLeftAuto}>홍길동</Text>
+                <Text style={styles.marginLeftAuto}>서명</Text>
+              </View>
+              <View style={styles.signRow}>
+                <Text>확인자</Text>
+                <Text style={styles.marginLeftAuto}>대표이사 홍길동</Text>
+                <Text style={styles.marginLeftAuto}>서명</Text>
               </View>
             </View>
           </View>
