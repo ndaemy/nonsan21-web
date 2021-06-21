@@ -87,8 +87,8 @@ const styles = StyleSheet.create({
   },
   logTableDayRow: {
     lineHeight: 1.4,
-    height: 60,
-    paddingTop: 16,
+    height: 38,
+    paddingTop: 6,
     borderTop: 0.5,
   },
   paddingY8: {
@@ -194,6 +194,21 @@ function Index() {
               <View style={styles.logTableDayRow}>
                 <Text style={styles.marginXAuto}>1월 5일{`\n`}금요일</Text>
               </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>1월 8일{`\n`}월요일</Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>1월 9일{`\n`}화요일</Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>1월 10일{`\n`}수요일</Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>1월 11일{`\n`}목요일</Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>1월 12일{`\n`}금요일</Text>
+              </View>
             </View>
             <View style={styles.logTableSecondColumn}>
               <View style={styles.paddingY8}>
@@ -224,10 +239,50 @@ function Index() {
                   시작 시간: 10:00{`\n`}종료 시간: 19:00
                 </Text>
               </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>
+                  시작 시간: 10:00{`\n`}종료 시간: 19:00
+                </Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>
+                  시작 시간: 10:00{`\n`}종료 시간: 19:00
+                </Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>
+                  시작 시간: 10:00{`\n`}종료 시간: 19:00
+                </Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>
+                  시작 시간: 10:00{`\n`}종료 시간: 19:00
+                </Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>
+                  시작 시간: 10:00{`\n`}종료 시간: 19:00
+                </Text>
+              </View>
             </View>
             <View style={styles.logTableThirdColumn}>
               <View style={styles.paddingY8}>
                 <Text style={styles.marginXAuto}>수행업무 내용</Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>이것 저것</Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>이것 저것</Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>이것 저것</Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>이것 저것</Text>
+              </View>
+              <View style={styles.logTableDayRow}>
+                <Text style={styles.marginXAuto}>이것 저것</Text>
               </View>
               <View style={styles.logTableDayRow}>
                 <Text style={styles.marginXAuto}>이것 저것</Text>
