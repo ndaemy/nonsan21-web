@@ -137,7 +137,29 @@ const styles = StyleSheet.create({
   },
 });
 
-function Index() {
+interface TwoWeekReportProps {
+  name: string;
+  birthday: string;
+  joinDate: string;
+  company: string;
+  cellPhone: string;
+  startAt: string;
+  endAt: string;
+  address: string;
+  createDate: string;
+}
+
+function TwoWeekReport({
+  name,
+  birthday,
+  joinDate,
+  company,
+  cellPhone,
+  startAt,
+  endAt,
+  address,
+  createDate,
+}: TwoWeekReportProps) {
   return (
     <Document>
       <Page size='A4' style={styles.page}>
@@ -153,21 +175,21 @@ function Index() {
               <View style={[styles.infoTableRow, styles.borderBottomHalf]}>
                 <View style={styles.infoTableRowItem}>
                   <Text>성명</Text>
-                  <Text style={styles.tab}>홍길동</Text>
+                  <Text style={styles.tab}>{name}</Text>
                 </View>
                 <View style={[styles.infoTableRowItem, styles.borderLeftHalf]}>
                   <Text>생년월일</Text>
-                  <Text style={styles.tab}>20. 10. 21.</Text>
+                  <Text style={styles.tab}>{birthday}</Text>
                 </View>
                 <View style={[styles.infoTableRowItem, styles.borderLeftHalf]}>
                   <Text>편입일</Text>
-                  <Text style={styles.tab}>20. 10. 21.</Text>
+                  <Text style={styles.tab}>{joinDate}</Text>
                 </View>
               </View>
               <View style={styles.infoTableRow}>
                 <View style={styles.infoTableRowItem}>
                   <Text>소속</Text>
-                  <Text style={styles.tab}>주식회사 왓챠</Text>
+                  <Text style={styles.tab}>{company}</Text>
                 </View>
               </View>
             </View>
@@ -184,19 +206,19 @@ function Index() {
                 </View>
                 <View style={[styles.infoTableRowItem, styles.borderLeftHalf]}>
                   <Text>연락처</Text>
-                  <Text style={styles.tab}>010-1234-5678</Text>
+                  <Text style={styles.tab}>{cellPhone}</Text>
                 </View>
                 <View style={[styles.infoTableRowItem, styles.borderLeftHalf]}>
                   <Text>재택기간</Text>
-                  <Text style={styles.tab}>20. 10. 21. ~ 20. 10. 28.</Text>
+                  <Text style={styles.tab}>
+                    {startAt} ~ {endAt}
+                  </Text>
                 </View>
               </View>
               <View style={styles.infoTableRow}>
                 <View style={styles.infoTableRowItem}>
                   <Text>근무지 주소</Text>
-                  <Text style={styles.tab}>
-                    서울특별시 서초구 강남대로 343 3층 왓챠
-                  </Text>
+                  <Text style={styles.tab}>{address}</Text>
                 </View>
               </View>
             </View>
@@ -333,12 +355,12 @@ function Index() {
               <Text style={styles.alignCenter}>
                 위와 같이 재택근무기간 중 근무하였음을 확인합니다.
               </Text>
-              <Text style={styles.alignRight}>2021년 1월 12일</Text>
+              <Text style={styles.alignRight}>{createDate}</Text>
             </View>
             <View style={styles.signBlock}>
               <View style={styles.signRow}>
                 <Text>작성자</Text>
-                <Text style={styles.marginLeftAuto}>홍길동</Text>
+                <Text style={styles.marginLeftAuto}>{name}</Text>
                 <Text style={styles.marginLeftAuto}>서명</Text>
               </View>
               <View style={styles.signRow}>
@@ -354,4 +376,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default TwoWeekReport;
